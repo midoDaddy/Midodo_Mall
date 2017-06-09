@@ -2,11 +2,14 @@
 * @Author: midoDaddy
 * @Date:   2017-06-09 12:40:00
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-09 17:07:00
+* @Last Modified time: 2017-06-09 18:08:06
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+
+//环境变量的配置
+var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
 
 //获取html-webpack-plugin的方法
 var getHtmlConfig = function(name) {
@@ -26,7 +29,8 @@ var config = {
     },
     output: {
         path: './dist',
-        filename: 'js/[name].js'
+        filename: 'js/[name].js',
+        publicPath: '/dist'
     },
     externals: {
         'jquery': 'window.jQuery'
@@ -34,7 +38,7 @@ var config = {
     module: {
         loaders: [
             {test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader')},
-            {test: /\.(png|jpg|gif|woff|ttf|svg|eot)\??.*$/, loader: 'url-loader?limit=100&name=resource/[name].[ext]'},
+            {test: /\.(png|jpg|gif|woff|ttf|svg|eot)\??.*$/, loader: 'url-loader?limit=100&name=../resource/[name].[ext]'},
        ]
     },
     plugins: [
@@ -51,4 +55,7 @@ var config = {
     ],
 
 };
+if (WEBPACK_ENV === 'dev') {
+    config.entry.common.push('webpack-dev-server/client?http://localhost:8088/');
+}
 module.exports = config;
