@@ -33,6 +33,12 @@ var _mm = {
     getServerUrl: function(path) {
         return conf.serverHost + path;
     },
+    //获取url参数
+    getUrlParam: function(name) {
+        var reg = RegExp('(^|&)' + name + '=([^&]*)(&|$)');
+        var results = window.location.search.substring(1).match(reg);
+        return results ? results[2] : null;
+    },
     //统一登录处理
     doLogin: function() {
         window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href)
