@@ -6,7 +6,12 @@
 </head>
     
 <body>
+    <%= require('html-loader!./layout/nav.html') %>
+    <%= require('html-loader!./layout/simple-nav.html') %>
     <h1>hello midodo!!!</h1>
+    <div class="btn">midodo</div>
+    <div class="btn btn-mini">midodo</div>
+    <i class="fa fa-user"></i>
     <%= require('html-loader!./layout/footer-common.html') %>
 </body>
 </html>

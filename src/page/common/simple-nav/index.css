@@ -1,0 +1,17 @@
+/*
+* @Author: midoDaddy
+* @Date:   2017-06-15 11:50:18
+* @Last Modified by:   midoDaddy
+* @Last Modified time: 2017-06-15 12:10:48
+*/
+.simple-nav {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+.simple-nav .logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #c60023;
+}

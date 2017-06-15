@@ -1,0 +1,28 @@
+/*
+* @Author: midoDaddy
+* @Date:   2017-06-15 15:24:37
+* @Last Modified by:   midoDaddy
+* @Last Modified time: 2017-06-15 17:43:19
+*/
+.nav {
+    background: #eee;
+    height: 30px;
+    line-height: 30px;
+}
+.nav .user-info {
+    float: left;
+}
+.nav .user-info .link {
+    margin-right: 5px;
+}
+.nav .user.login {
+    display: none;
+}
+.nav-list {
+    float: right;
+}
+.nav-item {
+    display: inline-block;
+    margin-left: 5px;
+}
+
