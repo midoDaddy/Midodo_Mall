@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-09 12:40:00
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-13 10:37:38
+* @Last Modified time: 2017-06-15 09:54:35
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -43,10 +43,11 @@ var config = {
     },
     resolve: {
         alias: {
-            util    : __dirname + '/src/util',
-            page    : __dirname + '/src/page',
-            service : __dirname + '/src/service',
-            image   : __dirname + '/src/image',
+            util            : __dirname + '/src/util',
+            page            : __dirname + '/src/page',
+            service         : __dirname + '/src/service',
+            image           : __dirname + '/src/image',
+            node_modules    : __dirname + '/node_modules',
         }
     },
     plugins: [
