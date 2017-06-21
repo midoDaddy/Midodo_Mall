@@ -7,11 +7,13 @@
     
 <body>
     <%= require('html-loader!./layout/nav.html') %>
-    <%= require('html-loader!./layout/simple-nav.html') %>
-    <h1>hello midodo!!!</h1>
-    <div class="btn">midodo</div>
-    <div class="btn btn-mini">midodo</div>
-    <i class="fa fa-user"></i>
+    <%= require('html-loader!./layout/header.html') %>
+    <div class="page-wrapper w">
+    	<%= require('html-loader!./layout/nav-side.html') %>
+    	<div class="content with-nav">
+    		test
+    	</div>
+    </div>
     <%= require('html-loader!./layout/footer-common.html') %>
 </body>
 </html>

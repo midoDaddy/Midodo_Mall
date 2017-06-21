@@ -1,11 +1,11 @@
 /*
 * @Author: Administrator
 * @Date:   2017-06-18 11:09:48
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-06-18 11:48:26
+* @Last Modified by:   midoDaddy
+* @Last Modified time: 2017-06-21 15:54:33
 */
 .footer {
-	padding-bottom: 10px;
+	padding: 10px;
 }
 .footer .links, .footer .copyright {
 	text-align: center;
