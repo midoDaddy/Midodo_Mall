@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<body>
+    <%= require('html-loader!./layout/simple-nav.html') %>
+    <div class="page-wrapper"> 
+        <div class="w">
+            <div class="user-con">
+                <div class="user-title">用户登录</div>
+                <div class="user-box">
+                    <div class="error-item">
+                        <i class="fa fa-minus-circle error-icon"></i>
+                        <p class="error-msg">Error</p>
+                    </div>
+                    <div class="user-item">
+                        <label for="username" class="user-label">
+                            <i class="fa fa-user"></i>
+                        </label>
+                        <input type="text" class="user-input" id="username" placeholder="请输入用户名" autocomplete="off">
+                    </div>
+                    <div class="user-item">
+                        <label for="password" class="user-label">
+                            <i class="fa fa-lock"></i>
+                        </label>
+                        <input type="password" class="user-input" id="password" placeholder="请输入密码" autocomplete="off">
+                    </div>
+                    <button class="btn btn-login" id="btn-login">登录</button>
+                    <div class="link-item">
+                        <a href="./user-pass-reset.html" class="link" target="_blank">忘记密码</a>
+                        <a href="./user-register.html" class="link" target="_blank">立即注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </div>
+    <%= require('html-loader!./layout/footer-common.html') %>
+</body>
+</html>

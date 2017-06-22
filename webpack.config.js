@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-09 12:40:00
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-21 15:10:22
+* @Last Modified time: 2017-06-21 17:17:55
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -25,7 +25,7 @@ var getHtmlConfig = function(name, title) {
 var config = {
     entry: {
         'index' : ['./src/page/index/index.js'],
-        'login' : ['./src/page/index/login.js'],
+        'user-login' : ['./src/page/user-login/index.js'],
         'common': ['./src/page/common/index.js'],
         'result': ['./src/page/result/index.js']
     },
@@ -63,7 +63,7 @@ var config = {
         new ExtractTextPlugin('css/[name].css'),
         //html模板处理
         new HtmlWebpackPlugin(getHtmlConfig('index', '首页')),
-        new HtmlWebpackPlugin(getHtmlConfig('login', '用户登录')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
     ],
 

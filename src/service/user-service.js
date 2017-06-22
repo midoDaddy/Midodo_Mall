@@ -2,13 +2,23 @@
 * @Author: midoDaddy
 * @Date:   2017-06-18 08:47:33
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-20 00:02:06
+* @Last Modified time: 2017-06-22 12:52:31
 */
 
 'use strict';
 var _mm = require('util/mm.js');
 
 var _user = {
+    //用户登录
+    login: function(userInfo, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/user/login.do'),
+            method: 'POST',
+            data: userInfo,
+            success: resolve,
+            error: reject
+        })
+    },
     //登出
     logout: function(resolve, reject){
         _mm.request({

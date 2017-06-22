@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-13 09:48:47
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-19 23:48:04
+* @Last Modified time: 2017-06-21 17:05:59
 */
 var conf = {
     serverHost: ''
@@ -75,7 +75,7 @@ var _mm = {
     },
     //统一登录处理
     doLogin: function() {
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href)
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href)
     },
     //回到主页
     goHome: function() {
