@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-18 08:47:33
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-22 12:52:31
+* @Last Modified time: 2017-06-27 10:20:57
 */
 
 'use strict';
@@ -17,7 +17,30 @@ var _user = {
             data: userInfo,
             success: resolve,
             error: reject
-        })
+        });
+    },
+    //用户注册
+    register: function(userInfo, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/user/register.do'),
+            method: 'POST',
+            data: userInfo,
+            success: resolve,
+            error: reject
+        });
+    },
+    //验证用户名
+    checkUsername: function(username, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/user/check_valid.do'),
+            method: 'POST',
+            data: {
+                type: 'username',
+                str: username
+            },
+            success: resolve,
+            error: reject
+        });
     },
     //登出
     logout: function(resolve, reject){
@@ -26,7 +49,7 @@ var _user = {
             method: 'POST',
             success: resolve,
             error: reject
-        })
+        });
     },
     //检查登录状态
     checkLogin: function(resolve, reject) {
@@ -35,7 +58,7 @@ var _user = {
             method: 'POST',
             success: resolve,
             error: reject
-        })
+        });
     }
 }
 

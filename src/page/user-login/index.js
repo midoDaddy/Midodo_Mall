@@ -2,13 +2,12 @@
 * @Author: midoDaddy
 * @Date:   2017-06-21 17:13:09
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-22 13:02:58
+* @Last Modified time: 2017-06-27 17:27:20
 */
 
 'use strict';
 require('./index.css');
 require('page/common/simple-nav/index.js');
-require('node_modules/font-awesome/css/font-awesome.min.css');
 var _mm = require('util/mm.js');
 var _user = require('service/user-service.js');
 var formError = {
@@ -25,7 +24,7 @@ var page = {
     },
     bindEvent: function() {
         var _this = this;
-        $('#btn-login').click(function() {
+        $('#submit-btn').click(function() {
             _this.submit();
         });
         $('.user-input').keyup(function(e) {
@@ -43,7 +42,7 @@ var page = {
         var validateResult = this.formValidate(formData);
         if (validateResult.status) {
             _user.login(formData, function(res) {
-                window.location.href = _mm.getUrlParam('redirect') || './index.html';
+                window.location.href = decodeURIComponent(_mm.getUrlParam('redirect')) || './index.html';
             }, function(errMsg) {
                 formError.show(errMsg);
             });
