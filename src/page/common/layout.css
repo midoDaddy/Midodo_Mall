@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-14 17:13:51
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-15 09:50:04
+* @Last Modified time: 2017-06-28 16:48:13
 */
 
 /* css reset */
@@ -36,6 +36,24 @@ input[type='checkbox'] {
 	overflow: hidden;
 }
 
+/* 容器 */
+.panel {
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #fff;
+}
+.panel .panel-title {
+	padding: 10px;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+.panel .panel-body {
+	padding: 10px;
+	overflow: hidden;
+}
+
 .hide {
 	display: none;
 }
@@ -61,6 +79,7 @@ input[type='checkbox'] {
 	line-height: 40px;
 	font-weight: bold;
     color: #fff;
+    text-decoration: none;
 	border: none;
 	outline: none;
 	background: #c60023;

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+<head>
+    <%= require('html-loader!./layout/header-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title %> - Midodo电商平台</title>
+</head> 
 <body>
     <%= require('html-loader!./layout/simple-nav.html') %>
     <div class="page-wrapper"> 

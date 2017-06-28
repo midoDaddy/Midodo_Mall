@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-13 09:48:47
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-27 16:20:47
+* @Last Modified time: 2017-06-28 17:05:26
 */
 var conf = {
     serverHost: ''
@@ -59,7 +59,7 @@ var _mm = {
     },
     //操作失败消息提示
     errorTips: function(msg) {
-        alert(msg || '出问题啦~');
+        console.log(msg || '出问题啦~');
     },
     //字段验证，支持非空、手机、邮箱的验证
     validate: function(value, type) {

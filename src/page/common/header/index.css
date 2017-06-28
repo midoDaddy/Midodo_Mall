@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-19 17:50:11
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-19 23:14:35
+* @Last Modified time: 2017-06-28 16:27:44
 */
 .header .logo {
     position: absolute;
@@ -31,4 +31,14 @@
     position: absolute;
     height: 44px;
     width: 100px;
+}
+/* 面包屑导航 */
+.crumb {
+    height: 50px;
+    margin-bottom: 10px;
+    color: #888;
+    font-size: 14px;
+    line-height: 50px;
+    background: #eee;
+    border-top: 2px solid #c60023;
 }

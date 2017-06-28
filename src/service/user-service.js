@@ -1,8 +1,8 @@
 /*
 * @Author: midoDaddy
 * @Date:   2017-06-18 08:47:33
-* @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-27 10:20:57
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-06-28 23:43:50
 */
 
 'use strict';
@@ -38,6 +38,57 @@ var _user = {
                 type: 'username',
                 str: username
             },
+            success: resolve,
+            error: reject
+        });
+    },
+    //获取用户密码提示问题
+    getQuestion: function(username, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/user/forget_get_question.do'),
+            method: 'POST',
+            data: {
+                username: username
+            },
+            success: resolve,
+            error: reject
+        });
+    },
+    //检查密码提示问题答案
+    checkAnswer: function(userInfo, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/user/forget_check_answer.do'),
+            method: 'POST',
+            data: userInfo,
+            success: resolve,
+            error: reject
+        });
+    },
+    //更新密码
+    resetPassword: function(userInfo, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/user/forget_reset_password.do'),
+            method: 'POST',
+            data: userInfo,
+            success: resolve,
+            error: reject
+        });
+    },
+    //获取用户信息
+    getUserInfo: function(resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/user/get_information.do'),
+            method: 'POST',
+            success: resolve,
+            error: reject
+        });
+    },
+    //更新用户信息
+    updateUserInfo: function(userInfo, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/user/update_information.do'),
+            method: 'POST',
+            data: userInfo,
             success: resolve,
             error: reject
         });
