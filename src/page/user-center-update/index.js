@@ -1,14 +1,13 @@
 /*
 * @Author: midoDaddy
 * @Date:   2017-06-28 16:23:54
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-06-28 23:44:14
+* @Last Modified by:   midoDaddy
+* @Last Modified time: 2017-06-30 14:04:30
 */
 
 'use strict';
 
 require('./index.css');
-require('node_modules/font-awesome/css/font-awesome.min.css');
 require('page/common/simple-nav/index.js');
 require('page/common/nav/index.js');
 require('page/common/header/index.js');
@@ -45,7 +44,7 @@ var page = {
                     window.location.href = './user-center.html';
                 }, function(errMsg) {
                     _mm.errorTips(errMsg);
-                })
+                });
             } else {
                 _mm.errorTips(validateResult.msg);
             }          

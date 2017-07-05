@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-13 09:48:47
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-28 17:05:26
+* @Last Modified time: 2017-06-29 17:41:59
 */
 var conf = {
     serverHost: ''
@@ -55,7 +55,7 @@ var _mm = {
     },  
     //操作成功消息提示
     successTips: function(msg) {
-        alert(msg || '操作成功！');
+        console.log(msg || '操作成功！');
     },
     //操作失败消息提示
     errorTips: function(msg) {

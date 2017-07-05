@@ -1,0 +1,17 @@
+/*
+* @Author: midoDaddy
+* @Date:   2017-07-05 10:04:22
+* @Last Modified by:   midoDaddy
+* @Last Modified time: 2017-07-05 12:23:04
+*/
+.banner { 
+    position: relative; 
+    overflow: auto;
+    background: yellow;
+}
+.banner li { 
+    list-style: none; 
+}
+.banner ul li { 
+    float: left;
+}

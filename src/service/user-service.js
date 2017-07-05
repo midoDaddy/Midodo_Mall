@@ -1,8 +1,8 @@
 /*
 * @Author: midoDaddy
 * @Date:   2017-06-18 08:47:33
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-06-28 23:43:50
+* @Last Modified by:   midoDaddy
+* @Last Modified time: 2017-06-29 17:33:58
 */
 
 'use strict';
@@ -87,6 +87,16 @@ var _user = {
     updateUserInfo: function(userInfo, resolve, reject){
         _mm.request({
             url: _mm.getServerUrl('/user/update_information.do'),
+            method: 'POST',
+            data: userInfo,
+            success: resolve,
+            error: reject
+        });
+    },
+    //修改密码
+    updatePassword: function(userInfo, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/user/reset_password.do'),
             method: 'POST',
             data: userInfo,
             success: resolve,

@@ -2,12 +2,11 @@
 * @Author: midoDaddy
 * @Date:   2017-06-28 16:00:41
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-28 17:03:34
+* @Last Modified time: 2017-06-30 14:04:24
 */
 
 'use strict';
 require('./index.css');
-require('node_modules/font-awesome/css/font-awesome.min.css');
 require('page/common/simple-nav/index.js');
 require('page/common/nav/index.js');
 require('page/common/header/index.js');
