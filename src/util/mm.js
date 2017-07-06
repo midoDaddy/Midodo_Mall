@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-13 09:48:47
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-29 17:41:59
+* @Last Modified time: 2017-07-05 21:53:44
 */
 var conf = {
     serverHost: ''
@@ -44,7 +44,7 @@ var _mm = {
     //获取url参数
     getUrlParam: function(name) {
         var reg = RegExp('(^|&)' + name + '=([^&]*)(&|$)');
-        var results = window.location.search.substring(1).match(reg);
+        var results = decodeURIComponent(window.location.search).substring(1).match(reg);
         return results ? results[2] : null;
     },
     //渲染html模板

@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-19 17:50:22
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-20 00:03:43
+* @Last Modified time: 2017-07-05 21:51:11
 */
 
 'use strict';
@@ -12,6 +12,7 @@ var _mm = require('util/mm.js');
 var header = {
     init: function(){
         this.bindEvent();
+        this.onLoad();
         return this;
     },
     onLoad: function() {
