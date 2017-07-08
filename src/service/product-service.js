@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-07-05 21:45:18
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-07-05 22:39:38
+* @Last Modified time: 2017-07-07 17:09:20
 */
 
 'use strict';
@@ -15,6 +15,26 @@ var _product = {
         _mm.request({
             url: _mm.getServerUrl('/product/list.do'),
             data: listParam,
+            success: resolve,
+            error: reject
+        });
+    },
+    //获取商品详情信息
+    getProductDetail: function(productId, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/product/detail.do'),
+            data: {
+                productId: productId
+            },
+            success: resolve,
+            error: reject
+        });
+    },
+    //加入购物车
+    addToCart: function(productInfo, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/cart/add.do'),
+            data: productInfo,
             success: resolve,
             error: reject
         });

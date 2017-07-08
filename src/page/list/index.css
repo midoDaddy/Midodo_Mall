@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-07-05 16:27:12
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-07-05 23:35:26
+* @Last Modified time: 2017-07-07 14:30:50
 */
 .sort-con {
     overflow: auto;
@@ -74,4 +74,15 @@
     line-height: 20px;
     font-size: 14px;
     text-decoration: none;
+}
+
+/* 错误提示信息 */
+.err-tip {
+    height: 60px;
+    line-height: 60px;
+    color: #f60;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background: #eee;
 }

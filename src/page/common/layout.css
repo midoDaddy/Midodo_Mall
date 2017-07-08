@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-14 17:13:51
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-07-06 11:32:45
+* @Last Modified time: 2017-07-07 11:57:33
 */
 
 /* css reset */
@@ -26,6 +26,16 @@ label {
 }
 input[type='checkbox'] {
 	cursor: pointer;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+    visibility: hidden;
+    height: 0;
 }
 
 /* 定宽布局 */
