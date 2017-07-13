@@ -1,0 +1,178 @@
+/*
+* @Author: midoDaddy
+* @Date:   2017-07-12 10:10:25
+* @Last Modified by:   midoDaddy
+* @Last Modified time: 2017-07-13 16:44:27
+*/
+.address-item,
+.address-add {
+    float: left;
+    width: 200px;
+    padding: 10px;
+    margin: 20px 20px 0 0;
+    border: 3px dashed #ccc;
+    cursor: pointer;
+}
+.address-item.active {
+    border-color: #c60023;
+}
+.address-item:hover,
+.address-add:hover  {
+    background: #fafafa;
+}
+
+.address-title {
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+.address-detail {
+    margin-top: 5px;
+    height: 40px;
+    line-height: 20px;
+    color: #666;
+    overflow: hidden;
+}
+.address-opera {
+    visibility: hidden;
+    text-align: right;
+}
+.address-item:hover .address-opera{
+    visibility: visible;
+}
+.address-opera .link {
+    margin-right: 5px;
+}
+.address-new {
+    text-align: center; 
+    color: #ccc;
+    padding: 8px 0;
+}
+.address-new .fa {
+    font-size: 50px;
+    line-height: 50px;
+}
+.address-new .text {
+    font-size: 12px;
+}
+
+.product-table {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    border-collapse: collapse;
+}
+.product-table th,
+.product-table td {
+    border-bottom: 1px dotted #ddd;
+}
+.cell-img {
+    width: 10%;
+    padding: 10px;
+}
+.cell-img .p-img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+}
+.cell-info {
+    width: 30%;
+    text-align: left;
+}
+.cell-price {
+    width: 20%;
+}
+.cell-count {
+    width: 20%;
+}
+.cell-total {
+    width: 20%;
+}
+
+/* 订单提交 */
+.submit-con {
+    background: #eee;
+    text-align: right;
+}
+.submit-total {
+    margin-right: 20px;
+    font-size: 18px;
+    color: #c60023;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.btn-submit {
+    height: 50px;
+    line-height: 50px;
+}
+
+/* modal */
+.modal {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal-con {
+    width: 700px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 2px;
+}
+.modal-header {
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.modal-title {
+    font-size: 14px;
+}
+.modal-header .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.modal-body {
+    padding: 15px;
+}
+
+.form-line {
+    margin: 5px 0;
+    overflow: hidden;
+}
+.address-label {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    line-height: 30px;
+    text-align: right;
+    cursor: pointer;
+}
+.address-label .require {
+    color: red;
+}
+.address-input {
+    height: 30px;
+    padding: 0 5px;
+    margin-right: 10px;
+    line-height: 30px;
+    outline: none;
+}
+.address-confirm-btn {
+    margin-left: 110px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+}

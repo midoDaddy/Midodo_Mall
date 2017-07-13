@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-07-10 10:49:18
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-07-11 16:33:13
+* @Last Modified time: 2017-07-12 10:07:11
 */
 
 'use strict';
@@ -121,7 +121,7 @@ var page = {
         //提交订单
         $(document).on('click', '.btn-submit', function(){
             if (_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0) {
-                window.location.href = './confirm.html';
+                window.location.href = './order-confirm.html';
             } else {
                 _mm.errorTips('您选择商品后再提交');
             }
