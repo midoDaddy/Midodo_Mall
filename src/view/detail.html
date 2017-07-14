@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <%= require('html-loader!./layout/header-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title %> - Midodo电商平台</title>
+</head>
+    
+<body>
+    <%= require('html-loader!./layout/nav.html') %>
+    <%= require('html-loader!./layout/header.html') %>
+    <div class="crumb">
+        <div class="w">
+            <div class="crumb-con">
+                <a href="./index.html" class="link">MMall</a>
+                <span>></span>
+                <span class="link-text">商品详情</span>
+            </div>
+        </div>
+    </div>
+    <div class="page-wrapper w">    
+       <p class="err-tip">midodododo</p>
+    </div>
+    <%= require('html-loader!./layout/footer-common.html') %>
+</body>
+</html>

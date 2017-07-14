@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-14 17:13:51
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-15 09:50:04
+* @Last Modified time: 2017-07-11 16:28:00
 */
 
 /* css reset */
@@ -27,12 +27,40 @@ label {
 input[type='checkbox'] {
 	cursor: pointer;
 }
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
 
 /* 定宽布局 */
 .w {
 	width: 1080px;
 	margin: 0 auto;
 	position: relative;
+	overflow: hidden;
+}
+
+/* 容器 */
+.panel {
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #fff;
+}
+.panel .panel-title {
+	padding: 10px;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+.panel .panel-body {
+	padding: 10px;
 	overflow: hidden;
 }
 
@@ -61,9 +89,11 @@ input[type='checkbox'] {
 	line-height: 40px;
 	font-weight: bold;
     color: #fff;
+    text-decoration: none;
 	border: none;
 	outline: none;
 	background: #c60023;
+    cursor: pointer;
 }
 .btn-mini {
 	height: 25px;
@@ -73,8 +103,12 @@ input[type='checkbox'] {
 }
 
 .loading {
-	display: block;
-	height: 50px;
-	width: 50px;
-	margin: 10px auto;	
+	margin: 10px auto;
+    display: block;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: url(../../image/icon/loading.gif) no-repeat;
+    opacity: .6;
 }

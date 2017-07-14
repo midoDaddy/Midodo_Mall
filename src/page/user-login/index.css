@@ -1,0 +1,80 @@
+/*
+* @Author: midoDaddy
+* @Date:   2017-06-21 17:13:00
+* @Last Modified by:   midoDaddy
+* @Last Modified time: 2017-06-23 16:37:31
+*/
+.page-wrapper {
+    padding: 40px 0;
+    background: #e72955;
+}
+.user-con {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    background: #fff;
+}
+.user-con .user-title {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+}
+.user-con .user-box {
+    padding: 20px;
+}
+.user-con .user-box .error-item {
+    display: none;
+    position: relative;
+    padding: 4px 0 4px 40px;
+    margin-bottom: 20px;
+    color: #c60023;
+    border: 1px solid #c60023;
+    background: #fed9e9;
+}
+.user-con .user-box .error-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    margin-top: -7px;
+    font-size: 14px
+}
+.user-con .user-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+.user-con .user-item .user-label {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    width: 40px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #d3d3d3;
+    text-align: center;
+    background: #f3f3f3;
+    border-right: 1px solid #bdbdbd;
+}
+.user-con .user-item .user-input {
+    padding: 10px 0 10px 50px;
+    height: 18px;
+    width: 308px;
+    line-height: 18px;
+    font-size: 15px;
+    border: 1px solid #bdbdbd;
+    outline: none;
+}
+.user-con .submit-btn {
+    width: 100%;
+}
+.user-con .link-item {
+    margin-top: 10px;
+    text-align: right;
+}
+.user-con .link-item .link {
+    margin-left: 10px;
+    color: #999;
+}

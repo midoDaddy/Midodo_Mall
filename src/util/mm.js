@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-13 09:48:47
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-14 17:33:35
+* @Last Modified time: 2017-07-13 16:44:56
 */
 var conf = {
     serverHost: ''
@@ -15,12 +15,12 @@ var _mm = {
         $.ajax({
             type        : param.method  || 'get',
             url         : param.url     || '',
-            dataType    : param.type    || 'jason',
+            dataType    : param.type    || 'json',
             data        : param.data    || '',
-            success     : function(res) {
+            success     : function(res) {                       
                 //请求成功
                 if (res.status === 0) {
-                    typeof param.success === 'funciton' && param.success(res.data, res.msg);
+                    typeof param.success === 'function' && param.success(res.data, res.msg);
                 } 
                 // 如果没有登录，强制登录
                 else if (res.status === 10) {
@@ -28,11 +28,12 @@ var _mm = {
                 }
                 //请求数据错误
                 else if (res.status === 1) {
-                    typeof param.error === 'funciton' && param.error(res.msg);
+                    typeof param.error === 'function' && param.error(res.msg);
                 }
             },
-            error       : function(err) {
-                typeof param.error === 'funciton' && param.error(error.statusText);
+            error       : function(err) { 
+                console.log(err.statusText)
+                typeof param.error === 'function' && param.error(err.statusText);
             }
         });
     },
@@ -43,7 +44,7 @@ var _mm = {
     //获取url参数
     getUrlParam: function(name) {
         var reg = RegExp('(^|&)' + name + '=([^&]*)(&|$)');
-        var results = window.location.search.substring(1).match(reg);
+        var results = decodeURIComponent(window.location.search).substring(1).match(reg);
         return results ? results[2] : null;
     },
     //渲染html模板
@@ -75,7 +76,7 @@ var _mm = {
     },
     //统一登录处理
     doLogin: function() {
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href)
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href)
     },
     //回到主页
     goHome: function() {

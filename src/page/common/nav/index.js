@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-15 15:24:52
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-18 09:08:50
+* @Last Modified time: 2017-06-28 12:30:58
 */
 
 'use strict';
@@ -25,7 +25,7 @@ var nav = {
         });
         //注册点击事件
         $('.js-register').on('click', function() {
-            window.location.href = './register.html';
+            window.location.href = './user-register.html';
         });
         //退出点击事件
         $('.js-logout').on('click', function() {

@@ -1,0 +1,39 @@
+/*
+* @Author: midoDaddy
+* @Date:   2017-07-06 15:26:53
+* @Last Modified by:   midoDaddy
+* @Last Modified time: 2017-07-06 18:15:26
+*/
+
+.pg-content {
+    text-align: center;
+    color: #333;
+}
+.pg-item {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    margin: 0 2px;
+    border: 1px solid #ccc;
+    background: #eee;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.pg-item.disabled {
+    color: #ccc;
+    background: none;
+    cursor: auto;
+}
+.pg-item.active {
+    border: 1px solid #c60023;
+    color: #c60023;
+    background: none;
+}
+.pg-total {
+    margin-left: 10px;
+}

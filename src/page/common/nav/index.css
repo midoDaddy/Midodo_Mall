@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-15 15:24:37
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-06-15 17:43:19
+* @Last Modified time: 2017-06-21 09:49:07
 */
 .nav {
     background: #eee;
@@ -18,10 +18,10 @@
 .nav .user.login {
     display: none;
 }
-.nav-list {
+.nav .nav-list {
     float: right;
 }
-.nav-item {
+.nav .nav-item {
     display: inline-block;
     margin-left: 5px;
 }
