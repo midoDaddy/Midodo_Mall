@@ -1,0 +1,71 @@
+/*
+* @Author: midoDaddy
+* @Date:   2017-07-14 11:16:28
+* @Last Modified by:   midoDaddy
+* @Last Modified time: 2017-07-14 12:26:15
+*/
+
+
+.order-info .text-line {
+    height: 30px;
+    line-height: 30px;
+}
+.text-line .text {
+    margin-right: 30px;
+}
+.order-info .btn {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+
+.order-list-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    background: #fafafa;
+}
+.order-list-table.header {
+    background: #eee;
+}
+.product-info .cell {
+    border-bottom: 1px dashed #eee;
+}
+.cell-img {
+    width: 10%;
+    padding: 10px;
+}
+.cell-img .p-img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+}
+.cell-info {
+    width: 45%;
+    text-align: left;
+}
+.cell-price {
+    width: 15%;
+}
+.cell-count {
+    width: 15%;
+}
+.cell-total {
+    width: 15%;
+}
+
+.total {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: right;
+}
+.total-price {
+    font-weight: bold;
+    color: #c60023;
+}

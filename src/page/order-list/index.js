@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-07-13 22:51:43
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-07-14 10:16:45
+* @Last Modified time: 2017-07-14 10:48:07
 */
 
 'use strict';
@@ -21,7 +21,7 @@ var page = {
     data: {
         listParam : {
             pageNum : 1,
-            pageSize : 1
+            pageSize : 10
         }
     },
     init: function(){

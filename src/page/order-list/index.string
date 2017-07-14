@@ -14,7 +14,7 @@
         <td colspan="5"  class="order-info">
             <span class="order-text order-num">
                 <span>订单号：</span>
-                <a href="./order-detail.html?orderNumber={{orderNo}}" class="link" target="_blank">NO1111</a>
+                <a href="./order-detail.html?orderNumber={{orderNo}}" class="link" target="_blank">{{orderNo}}</a>
             </span>
             <span class="order-text">{{createTime}}</span>
             <span class="order-text">收件人：{{receiverName}}</span>

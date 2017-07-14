@@ -2,13 +2,13 @@
 * @Author: midoDaddy
 * @Date:   2017-07-12 14:07:50
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-07-14 00:38:13
+* @Last Modified time: 2017-07-14 12:30:36
 */
 
 'use strict';
 var _mm = require('util/mm.js');
 var _order = {
-    //用户登录
+    //获取商品列表
     getProductList: function(resolve, reject){
         _mm.request({
             url: _mm.getServerUrl('/order/get_order_cart_product.do'),
@@ -16,6 +16,7 @@ var _order = {
             error: reject
         });
     },
+    //创建订单
     createOrder: function(orderInfo, resolve, reject){
         _mm.request({
             url: _mm.getServerUrl('/order/create.do'),
@@ -24,6 +25,7 @@ var _order = {
             error: reject
         });
     },
+    //获取订单列表
     getOrderList: function(orderInfo, resolve, reject){
         _mm.request({
             url: _mm.getServerUrl('/order/list.do'),
@@ -32,6 +34,28 @@ var _order = {
             error: reject
         });
     },
+    //获取商品详情信息
+    getOrderDetail: function(orderNumber, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/order/detail.do'),
+            data: {
+                orderNo: orderNumber
+            },
+            success: resolve,
+            error: reject
+        });
+    },
+    //取消订单
+    cancelOrder: function(orderNumber, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/order/cancel.do'),
+            data: {
+                orderNo: orderNumber
+            },
+            success: resolve,
+            error: reject
+        });
+    }
 }
 
 module.exports = _order;
