@@ -1,8 +1,8 @@
 /*
 * @Author: midoDaddy
 * @Date:   2017-07-12 10:10:32
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-13 21:17:25
+* @Last Modified by:   midoDaddy
+* @Last Modified time: 2017-07-14 00:24:17
 */
 
 'use strict';
@@ -100,7 +100,7 @@ var page = {
         var _this = this;
         $('.address-con').html('<div class="loading"></div>');
         _address.getAddressList(function(res){
-            var data = _this.addressFilter(res);
+            _this.addressFilter(res);
             var addressHtml = _mm.renderHtml(templateAddress, res);
             $('.address-con').html(addressHtml);
         }, function(errMsg){

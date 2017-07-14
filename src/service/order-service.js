@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-07-12 14:07:50
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-07-12 17:28:21
+* @Last Modified time: 2017-07-14 00:38:13
 */
 
 'use strict';
@@ -19,6 +19,14 @@ var _order = {
     createOrder: function(orderInfo, resolve, reject){
         _mm.request({
             url: _mm.getServerUrl('/order/create.do'),
+            data: orderInfo,
+            success: resolve,
+            error: reject
+        });
+    },
+    getOrderList: function(orderInfo, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/order/list.do'),
             data: orderInfo,
             success: resolve,
             error: reject
