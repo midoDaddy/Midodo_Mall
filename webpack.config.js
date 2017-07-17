@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-06-09 12:40:00
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-07-14 11:15:35
+* @Last Modified time: 2017-07-14 17:30:44
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -31,6 +31,7 @@ var config = {
         'order-confirm'         : ['./src/page/order-confirm/index.js'],
         'order-list'            : ['./src/page/order-list/index.js'],
         'order-detail'          : ['./src/page/order-detail/index.js'],
+        'payment'               : ['./src/page/payment/index.js'],
         'user-login'            : ['./src/page/user-login/index.js'],
         'user-register'         : ['./src/page/user-register/index.js'],
         'user-center'           : ['./src/page/user-center/index.js'],
@@ -80,6 +81,7 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('order-confirm', '订单确认')),
         new HtmlWebpackPlugin(getHtmlConfig('order-list', '我的订单')),
         new HtmlWebpackPlugin(getHtmlConfig('order-detail', '订单详情')),
+        new HtmlWebpackPlugin(getHtmlConfig('payment', '订单支付')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('user-register', '用户注册')),
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', '找回密码')),

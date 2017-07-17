@@ -2,7 +2,7 @@
 * @Author: midoDaddy
 * @Date:   2017-07-12 14:07:50
 * @Last Modified by:   midoDaddy
-* @Last Modified time: 2017-07-14 12:30:36
+* @Last Modified time: 2017-07-14 18:12:48
 */
 
 'use strict';
@@ -55,7 +55,29 @@ var _order = {
             success: resolve,
             error: reject
         });
-    }
+    },
+    //获取支付信息
+    getPaymentInfo: function(orderNumber, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/order/pay.do'),
+            data: {
+                orderNo: orderNumber
+            },
+            success: resolve,
+            error: reject
+        });
+    },
+    //获取订单状态
+    getOrderStatus: function(orderNumber, resolve, reject){
+        _mm.request({
+            url: _mm.getServerUrl('/order/query_order_pay_status.do'),
+            data: {
+                orderNo: orderNumber
+            },
+            success: resolve,
+            error: reject
+        });
+    },
 }
 
 module.exports = _order;
